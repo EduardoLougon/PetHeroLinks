@@ -166,24 +166,6 @@ header {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.pulse-border {
-    animation: fadeInUp 0.6s ease-out forwards, box-shadow-pulse 2s infinite cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* On hover, disable the pulse so the normal hover shadow takes over */
-.pulse-border:hover {
-    animation: none;
-}
-
-@keyframes box-shadow-pulse {
-    0% {
-        box-shadow: 0 4px 12px rgba(1, 71, 96, 0.05), 0 0 0 0 rgba(253, 16, 36, 0.6);
-    }
-    100% {
-        box-shadow: 0 4px 12px rgba(1, 71, 96, 0.05), 0 0 0 16px rgba(253, 16, 36, 0);
-    }
-}
-
 .link-card:nth-child(1) { animation-delay: 0.1s; }
 .link-card:nth-child(2) { animation-delay: 0.2s; }
 .link-card:nth-child(3) { animation-delay: 0.3s; }
